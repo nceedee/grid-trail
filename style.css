@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+}
+
+
+.container{
+    display: grid;
+    
+
+}
+
+@media (min-width: 40em){
+    .container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+h1{
+    background-image: url(./image/paris.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.header{
+    
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: #9933cc;
+}
+
+li{
+    list-style: none;
+    padding: 8px;
+    margin: 4px;
+    transition: 2s;
+    animation-name: bobonwa;
+    animation-duration: 6s;
+    animation-iteration-count: infinite; 
+    
+}
+
+@media only screen and (max-width: 600px) {
+    li {
+        color: white;
+        width: 100%;
+        
+    }
+}
+
+@keyframes bobonwa{
+    0%{ background-color: #9933cc;}
+    20%{ background-color: yellow;}
+    30%{ background-color: red;}
+    40%{ background-color: pink;}
+    45%{ background-color: orange;}
+    60%{ background-color: gray;}
+    75%{ background-color: blue;}
+    85%{ background-color: yellow;}
+    100%{ background-color: #9933cc;}
+}
+
+.edit{
+    background-color: rgb(138, 43, 226,0.3);
+    width: 100%;
+}
+
+
+
+
+
+.list-items{
+    
+    /* float: left; */
+    /* height: 186px; */
+    padding: 10px;
+    
+}
+li:hover{
+    background-color: #9933cc;
+}
+
+
+.content{
+    font-size: larger;
+    font-weight: bolder;
+    width: 75%;
+    padding: 15px;
+    float: left;
+    animation-name: bobo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes bobo{
+    45%{ color: red;}
+    60%{ color: gray;}
+    75%{ color: blue;}
+    55%{ color: red;}
+    100%{ color: #9933cc;}
+    40%{ color: #9933cc;}
+    20%{ color: yellow;}
+    30%{ color: red;}
+    40%{ color: pink;}
+    40%{ color: white;}
+}
+
